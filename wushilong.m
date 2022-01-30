@@ -19,11 +19,11 @@ return ;
 
 function PlaneFrameModel
 %  Defining a finite element model of a planar rod system
-%  Input parameters£º
+%  Input parameters:
 %      none
-%  Return value£º
+%  Return value:
 %      none
-%  instruction£º
+%  instruction:
 %      This function defines the finite element model data of the planar rod system:
 %        gNode ------- Node definition
 %        gElement ---- unit definition
@@ -52,7 +52,7 @@ function PlaneFrameModel
     
     % Material properties
     %Elastic Modulus  bending moment of inertia  Cross-sectional area  density
-    gMaterial = [2.06e11,  0.03622,   0.0815,  1435.2/0.0815];   %  ²ÄÁÏ 1
+    gMaterial = [2.06e11,  0.03622,   0.0815,  1435.2/0.0815];   
 
     % The first kind of constraints
     % node number /degrees of freedom  /Constraint value
@@ -64,9 +64,9 @@ return
 
 function SolveModel
 %  Solve the Finite Element Model
-%  Input parameters£º
+%  Input parameters:
 %     none
-%  Return value£º
+%  Return value:
 %     none
 
 
@@ -222,9 +222,9 @@ return
 
 function DisplayResults
 %  Display calculation results
-%  Input parameters£º
+%  Input parameters:
 %      none
-%  Return value£º
+%  Return value:
 %     none
 
     global gNode gElement gMaterial gBC1 gEigValue gEigVector
